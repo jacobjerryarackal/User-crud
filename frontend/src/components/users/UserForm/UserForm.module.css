@@ -1,0 +1,28 @@
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fieldsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.formItem {
+  margin-bottom: 16px;
+}
+
+.actions {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.submitButton {
+  min-width: 120px;
+}
+
+.cancelButton {
+  min-width: 100px;
+}

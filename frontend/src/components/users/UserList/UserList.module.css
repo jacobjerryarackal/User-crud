@@ -1,0 +1,75 @@
+.card {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border: none !important;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  margin: 0 !important;
+  color: #1f2937 !important;
+  font-weight: 600 !important;
+}
+
+.titleIcon {
+  color: #1890ff;
+  font-size: 20px;
+}
+
+.subtitle {
+  color: #6b7280 !important;
+  font-size: 14px;
+}
+
+.search {
+  width: 100%;
+  max-width: 300px;
+}
+
+.table {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+.table :global(.ant-table-thead > tr > th) {
+  background: #f8fafc !important;
+  font-weight: 600 !important;
+  color: #374151 !important;
+  border-bottom: 2px solid #e5e7eb !important;
+}
+
+.table :global(.ant-table-tbody > tr > td) {
+  border-bottom: 1px solid #f0f0f0 !important;
+  padding: 16px !important;
+}
+
+.table :global(.ant-table-tbody > tr:hover) {
+  background: #f9fafb !important;
+}
+
+.table :global(.ant-pagination) {
+  margin-top: 24px !important;
+}

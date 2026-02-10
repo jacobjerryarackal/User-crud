@@ -1,0 +1,27 @@
+.sidebar {
+  background: #001529;
+  min-height: 100vh;
+  position: relative;
+}
+
+.logo {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logoText {
+  color: white !important;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.menu {
+  border-right: 0;
+}
+
+:global(.ant-menu-dark .ant-menu-item-selected) {
+  background-color: #1890ff !important;
+}

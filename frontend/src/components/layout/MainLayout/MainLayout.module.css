@@ -1,0 +1,29 @@
+.layout {
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.content {
+  margin: 24px;
+  padding: 0;
+  min-height: calc(100vh - 112px);
+}
+
+.contentInner {
+  padding: 24px;
+  min-height: calc(100vh - 112px);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content {
+    margin: 16px;
+  }
+  
+  .contentInner {
+    padding: 16px;
+  }
+}

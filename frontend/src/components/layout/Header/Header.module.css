@@ -1,0 +1,60 @@
+.header {
+  background: linear-gradient(135deg, #001529 0%, #1890ff 100%) !important;
+  padding: 0 !important;
+  height: 64px;
+  line-height: 64px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 24px;
+}
+
+.menuButton {
+  color: white !important;
+  font-size: 18px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.menuButton:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.titleContainer {
+  flex: 1;
+  margin-left: 16px;
+}
+
+.title {
+  color: white !important;
+  margin: 0 !important;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .title {
+    font-size: 16px !important;
+  }
+}
