@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect } from 'react';
-import { Form, Input, Button, Space } from 'antd';
+import { Form, Input, Button, Space } from 'antd'; 
+import type { Rule } from "antd/es/form";
 import { User, UserFormData } from '@/types';
 import { userFormFields } from '@/config/formFields';
 import styles from './UserForm.module.css';
@@ -12,16 +13,6 @@ interface UserFormProps {
   initialData?: User | null;
   loading?: boolean;
 }
-
-type ValidationRule = {
-  required?: boolean;
-  message?: string;
-  pattern?: RegExp;
-  min?: number;
-  max?: number;
-  type?: string;
-  validator?: (rule: any, value: any) => Promise<void>;
-};
 
 const UserForm: React.FC<UserFormProps> = ({
   onSubmit,
@@ -47,7 +38,7 @@ const UserForm: React.FC<UserFormProps> = ({
   };
 
   const getValidationRules = (field: typeof userFormFields[0]) => {
-    const rules: ValidationRule[] = [];
+    const rules: Rule[] = []; // Use Ant Design's Rule type
 
     // Add required rule
     if (field.required) {
