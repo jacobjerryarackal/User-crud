@@ -4,7 +4,14 @@ import usersRouter from "./routes/users";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
@@ -16,5 +23,5 @@ app.use("/api/users", usersRouter);
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
-  console.log(`🚀 User CRUD backend listening at http://localhost:${PORT}`);
+  console.log(`🚀 User CRUD backend running on port ${PORT}`);
 });
