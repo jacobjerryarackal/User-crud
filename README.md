@@ -156,6 +156,19 @@ Backend can be deployed on:
 
 ---
 
+## 🌐 Live Demo (Deployed)
+✅ Frontend (Vercel)
+
+🔗 https://user-crud-frontend-tan.vercel.app/
+
+✅ Backend (Render)
+
+🔗 https://user-crud-backend-8ghm.onrender.com/
+
+✅ API Test Endpoint
+
+🔗 https://user-crud-backend-8ghm.onrender.com/api/users
+
 ## 👨‍💻 Author
 
 Jacob Jerry Arackal
