@@ -1,5 +1,4 @@
 
-```md
 # User CRUD Management App (React + Next.js + Node.js)
 
 A simple CRUD (Create, Read, Update, Delete) web application to manage user data using a REST API.
