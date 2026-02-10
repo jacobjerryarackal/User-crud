@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { v4 as uuidv4 } from "uuid";
+import { randomUUID } from "crypto";
 import { createUserSchema, updateUserSchema } from "../requests/user.requests";
 import { User } from "../types/users.types";
 import { UserMemoryRepository } from "../repositories/user.repository";
@@ -55,7 +55,7 @@ export class UsersController {
       }
 
       const newUser: User = {
-        id: uuidv4(),
+        id: randomUUID(),
         ...input,
         createdAt: new Date(),
         updatedAt: new Date(),

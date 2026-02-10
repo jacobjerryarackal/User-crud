@@ -1,10 +1,10 @@
-import { v4 as uuidv4 } from "uuid";
+import { randomUUID } from "crypto";
 import { User } from "../types/users.types";
 
 export class UserMemoryRepository {
   private data: User[] = [
     {
-      id: uuidv4(),
+      id: randomUUID(),
       firstName: "John",
       lastName: "Doe",
       phoneNumber: "+1234567890",
