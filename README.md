@@ -37,7 +37,7 @@ This project contains:
 user-crud-app/
 │
 ├── backend/        # Node.js + Express REST API 
-└── frontend/       # Next.js + React + TypeScript UI 
+└── frontend/       # Next.js + React + TypeScript UI + Ant Design
 
 ````
 
